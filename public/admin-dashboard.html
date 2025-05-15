@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+<body>
+  <h2>Admin Dashboard</h2>
+  <button id="logoutBtn">Logout</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Wallet Address</th>
+        <th>Wallet Type</th>
+        <th>Assets (Toggle to Transfer)</th>
+      </tr>
+    </thead>
+    <tbody id="walletTableBody"></tbody>
+  </table>
+
+  <button id="transferBtn">Transfer Toggled Assets</button>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>
